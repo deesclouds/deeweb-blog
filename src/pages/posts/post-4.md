@@ -20,3 +20,10 @@ Astro components are reusable and fragments of HTML code. The way to create a ne
 
 I now know how to refractor my code by adding new and reusable components. I'm learned how to insert components within other components by implementing a footer component into this blog site. 
 
+To receive values from a component's frontmatter, we would need to create a dynamic value within the code fences. I would look like this:
+
+```
+---
+const { author, title, date} = Astro.props;
+---
+```

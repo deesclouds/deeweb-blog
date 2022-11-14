@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Navigation from '../components/navigation.astro';
 const pageTitle = 'My Astro Learning Blog';
 const siteTitle = "DeeWeb";
 ---
@@ -12,9 +13,7 @@ const siteTitle = "DeeWeb";
 	  <title>{siteTitle}</title>
 	</head>
 	<body>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/blog">Blog</a>
+       <Navigation/>
 
 	  <h1>{pageTitle}</h1>
 

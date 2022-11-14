@@ -36,3 +36,5 @@ To pass values as props to a component, it would look like this:
 ```
 
 I've learned how to create Astro components, how to import and use components, and how to pass props within those components.
+
+Creating responsive styling for this blog is much easier when starting from a mobile first design. I've noticed that I enjoy doing this first because it is easiest for me to start simple design standpoint and then build upon that. 

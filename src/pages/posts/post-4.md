@@ -34,3 +34,5 @@ To pass values as props to a component, it would look like this:
 <BlogPost title="My First Post" author="deesclouds" date="13 Nov 2022" />
 
 ```
+
+I've learned how to create Astro components, how to import and use components, and how to pass props within those components.

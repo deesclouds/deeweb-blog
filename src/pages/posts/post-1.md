@@ -8,6 +8,8 @@ image:
     alt: 'The Astro logo with the word One.'
 tags: ["astro", "blogging", "learning in public"]
 ---
+<a href="/blog">Back to Blog Page</a>
+
 # My First Blog Post
 
 Published on: 2022-11-13

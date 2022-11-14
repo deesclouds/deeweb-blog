@@ -8,6 +8,8 @@ image:
 pubDate: 2022-11-13
 tags: ["astro", "blogging", "learning in public","successes"]
 ---
+<a href="/blog">Back to Blog Page</a>
+
 Published on: 2022-11-13
 
 ## What I've accomplished:

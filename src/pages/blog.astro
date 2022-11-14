@@ -1,30 +1,31 @@
 ---
-import '../styles/global.css';
-import Navigation from '../components/navigation.astro';
-const pageTitle = 'My Astro Learning Blog';
+import "../styles/global.css";
+import Navigation from "../components/navigation.astro";
+import Footer from "../components/Footer.astro";
+const pageTitle = "My Astro Learning Blog";
 const siteTitle = "DeeWeb";
 ---
+
 <html lang="en">
-	<head>
-	  <meta charset="utf-8" />
-	  <link rel="icon" type ="image/svg+xml" href="/favicon.ico" />
-	  <meta name="viewport" content="width=device-width" />
-	  <meta name="generator" content = {Astro.generator} >
-	  <title>{siteTitle}</title>
-	</head>
-	<body>
-       <Navigation/>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{siteTitle}</title>
+  </head>
+  <body>
+    <Navigation />
 
-	  <h1>{pageTitle}</h1>
+    <h1>{pageTitle}</h1>
 
-      <p>This is where I will be sharing my learning journey with using Astro.</p>
+    <p>This is where I will be sharing my learning journey with using Astro.</p>
 
-      <ul>
-         <li><a href="/posts/post-1">Post 1</a></li>
-         <li><a href="/posts/post-2">Post 2</a></li>
-         <li><a href="/posts/post-3">Post 3</a></li>
-      </ul>  
-	
-    </body>
-  </html>
-  
+    <ul>
+      <li><a href="/posts/post-1">Post 1</a></li>
+      <li><a href="/posts/post-2">Post 2</a></li>
+      <li><a href="/posts/post-3">Post 3</a></li>
+    </ul>
+    <Footer />
+  </body>
+</html>

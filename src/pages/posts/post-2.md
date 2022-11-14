@@ -8,4 +8,8 @@ image:
 pubDate: 2022-11-13
 tags: ["astro", "blogging", "learning in public","successes"]
 ---
+Published on: 2022-11-13
+
+## What I've accomplished:
+
 After a successful first week learning Astro, I decided to try some more. I wrote and imported a small component from memory!

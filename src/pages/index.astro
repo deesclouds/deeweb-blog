@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 const pageTitle = 'Homepage';
+const siteTitle = "DeeWeb";
 ---
 <html lang="en">
 	<head>
@@ -8,7 +9,7 @@ const pageTitle = 'Homepage';
 	  <link rel="icon" type ="image/svg+xml" href="/favicon.ico" />
 	  <meta name="viewport" content="width=device-width" />
 	  <meta name="generator" content = {Astro.generator} >
-	  <title>Astro</title>
+	  <title>{siteTitle}</title>
 	</head>
 	<body>
 
@@ -16,8 +17,7 @@ const pageTitle = 'Homepage';
 	  <a href="/about">About</a>
 	  <a href="/blog">Blog</a>
 
-	  <h1>Astro</h1>
-	  <h1>My Astro Site</h1>
+	  <h1>{pageTitle}</h1>
 
 	</body>
   </html>

@@ -16,4 +16,6 @@ Published on: 2022-11-13
 
 It wasn't always smooth sailing, but I'm enjoying building with Astro. And, the [Discord community](https://astro.build/chat) is really friendly and helpful!
 
-I've learned that writing within Markdown converts to HTML within the browser. 
+## What I've learned:
+
+I've learned that writing within Markdown converts to HTML within the browser. I learned how to add dynamic HTML content and style my pages with CSS variables. 

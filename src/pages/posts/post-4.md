@@ -27,3 +27,10 @@ To receive values from a component's frontmatter, we would need to create a dyna
 const { author, title, date} = Astro.props;
 ---
 ```
+
+To pass values as props to a component, it would look like this:
+
+```
+<BlogPost title="My First Post" author="deesclouds" date="13 Nov 2022" />
+
+```

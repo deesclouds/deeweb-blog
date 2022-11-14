@@ -15,3 +15,5 @@ Published on: 2022-11-13
 ## What I've accomplished:
 
 It wasn't always smooth sailing, but I'm enjoying building with Astro. And, the [Discord community](https://astro.build/chat) is really friendly and helpful!
+
+I've learned that writing within Markdown converts to HTML within the browser. 

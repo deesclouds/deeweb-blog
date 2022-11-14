@@ -30,6 +30,19 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Python", "Django", "Astro
       <p>I am learning how to build a blog site by using Astro.</p>
       <p>I first heard about Astro while listening to my favorie podcast CodeNewbie.</p>
       <p>CodeNewbie is my favorite podcast because it is easy to digest and what I enjoy most is learning from the vast experiences from other developers within the industry.</p>
+
+      <p>Here are a few facts about me:</p>
+<ul>
+  <li>My name is {identity.firstName}.</li>
+  <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
+  {identity.hobbies.length >= 2 && 
+    <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+  } 
+</ul>
+<p>My skills are:</p>
+<ul>
+  {skills.map((skill) => <li>{skill}</li>)}
+</ul>
 	</body>
   </html>
   

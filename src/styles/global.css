@@ -45,10 +45,11 @@ html {
   background-color: #ff9776;
 }
 
+/* expanded class is to toggle links from display to hidden on mobile displays */
 .expanded {
   display: unset;
 }
-
+/* media query for larger screens */
 @media screen and (min-width: 636px) {
   .nav-links {
     margin-left: 5em;

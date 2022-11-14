@@ -6,7 +6,7 @@ image:
     url: "#"
     alt: "#"
 pubDate: 2022-11-14
-tags: ["astro", "learning in public", "components", "community"]
+tags: ["astro", "learning in public", "components", "community", "refractoring"]
 ---
 <a href="/blog">Back to Blog Page</a>
 

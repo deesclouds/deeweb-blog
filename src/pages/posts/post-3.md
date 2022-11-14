@@ -21,3 +21,5 @@ It wasn't always smooth sailing, but I'm enjoying building with Astro. And, the 
 I've learned that writing within Markdown converts to HTML within the browser. I learned how to add dynamic HTML content and style my pages with CSS variables. 
 
 I learned that variables placed within the style tag are used scoped only to it's own file. 
+
+To style pages globally across my whole site, I can place my styling within my global.css file and then import it. If I want to apply styling to a particular element on a specific page, I can add my styles within a style tag directly within that file.

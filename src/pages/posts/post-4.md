@@ -6,7 +6,7 @@ image:
     url: "#"
     alt: "#"
 pubDate: 2022-11-14
-tags: ["astro", "learning in public", "components", "community", "refractoring"]
+tags: ["astro", "learning in public", "components", "community", "refractor"]
 ---
 <a href="/blog">Back to Blog Page</a>
 
@@ -18,4 +18,5 @@ I learned how to refractor my code to improve my existing code design by utilizi
 
 Astro components are reusable and fragments of HTML code. The way to create a new file is by creating a new page ending with the '.astro' extension within the src/pages/ directory. 
 
-I now know how to refractor my code by adding new and reusable components.
+I now know how to refractor my code by adding new and reusable components. I'm learned how to insert components within other components by implementing a footer component into this blog site. 
+

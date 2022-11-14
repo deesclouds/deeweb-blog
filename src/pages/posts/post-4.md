@@ -14,3 +14,4 @@ Published on: 2022-11-14
 
 ## What I've learned:
 
+I learned how to refractor my code to improve my existing code design by utilizing less code without changing the design appearance.

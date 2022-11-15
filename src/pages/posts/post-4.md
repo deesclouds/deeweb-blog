@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: My Fourth Blog Post
 author: deesclouds
 description: "Now it's time to learn how to add components to my blog site"

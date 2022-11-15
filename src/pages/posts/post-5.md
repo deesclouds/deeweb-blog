@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: My Fifth Blog Post
 author: deesclouds
 description: "Now it's time to learn how to add javascript to my blog site"

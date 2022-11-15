@@ -48,7 +48,10 @@ Next we will create a new component titled `BlogPost.astro` within our component
 
 Next we write our code to receive our title and url as Astro.props.
 ```
+src/components/BlogPost.astro
+---
 const {title, url} = Astro.props;
+---
 ```
 
 Next we add templating to create our each element within our list.
@@ -58,8 +61,32 @@ Next we add templating to create our each element within our list.
 
 Next we import our our new component within our Blog page. 
 ```
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
 import BlogPost from '../components/BlogPost.astro';
-
+const allPosts = await Astro.glob('../pages/posts/*.md');
+const pageTitle = "My Astro Learning Blog";
+---
 ```
 
+If our component contains the following line of code:
+```
+---
+const myPosts = await Astro.glob('../pages/posts/*.md');
+---
+```
 
+The syntax to represent the title of our third blog post would be:
+```
+myPosts[2].frontmatter.title
+```
+
+A link to our first URL of our first blog post.
+```
+<a href={myPosts[0].url}>My First Blog Post!</a>
+```
+
+To build a component to display the date for each of our blog post to show when it was last updated. 
+```
+myPosts.map((post) => <LastUpdated date={post.frontmatter.pubDate}/>)
+```

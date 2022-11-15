@@ -1,9 +1,10 @@
 ---
-const {pageTitle} = Astro.props;
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import '../styles/global.css';
+const { pageTitle } = Astro.props;
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
 ---
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -15,7 +16,7 @@ import '../styles/global.css';
   <body>
     <Header />
     <h1>{pageTitle}</h1>
-    <slot/>
+    <slot />
     <Footer />
     <script>
       import "../scripts/menu.js";

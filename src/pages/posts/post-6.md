@@ -51,3 +51,26 @@ Information can be passed from one component to another by importing a UI compon
 Astro was built to take advantage of component based design.
 
 I can create an Astro layout component and I can send page specific component properties to a layout.
+
+This is how components work together within Astro!
+
+```
+src/pages/posts/learning-astro.md
+---
+layout: ../../layouts/MarkdownLayout.astro
+title: "Learning About Markdown in Astro"
+author: Astro Learner
+pubDate: 2022-08-08
+---
+I learned so much today! Astro allows me to write in Markdown, but also use variables from frontmatter. I can even access those variable in an Astro component.
+```
+```
+---
+import Footer from '../components/Footer.astro'
+const { frontmatter } = Astro.props
+---
+<h1>{frontmatter.title}</h1>
+<p>Written by:{frontmatter.author } on {frontmatter.pubDate}</p>
+< slot />
+<Footer />
+```

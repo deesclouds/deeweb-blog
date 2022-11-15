@@ -4,8 +4,8 @@ const { frontmatter } = Astro.props;
 <a href="/blog">Back to Blog Page</a>
 <h1>{frontmatter.title}</h1>
 <p>Published on: {frontmatter.pubDate.slice(0,10)}</p>
-<p><em>{frontmatter.description}</em></p>
+<p><em>Description: {frontmatter.description}</em></p>
 <p>Written by: {frontmatter.author}</p>
 <img src={frontmatter.url} width="300" alt={frontmatter.image.alt}/>
-<p>{frontmatter.tags.join(", ")}</p>
+<p>Tags: {frontmatter.tags.join(", ")}</p>
 <slot />

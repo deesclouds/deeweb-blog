@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths({ }) {
+  return[
+    {params: {tag: "astro"}},
+    {params: {tag: "successes"}},
+    {params: {tag: "community"}},
+    {params: {tag: "blogging"}},
+    {params: {tag: "setbacks"}},
+    {params: {tag: "components"}},
+    {params: {tag: "refractor"}},
+    {params: {tag: "responsive"}},
+    {params: {tag: "design"}},
+    {params: {tag: "mobile"}},
+    {params: {tag: "first"}},
+    {params: {tag: "javascript"}},
+    {params: {tag: "layouts"}},
+    {params: {tag: "slot"}},
+    {params: {tag: "nesting"}},
+    {params: {tag: "API"}},
+    {params: {tag: "system"}},
+    {params: {tag: "learning in public"}}
+  ]
+}
+
+const { tag } = Astro.params;
+---
+<BaseLayout pageTitle={tag}>
+  <p>Posts tagged with {tag}</p>
+</BaseLayout>

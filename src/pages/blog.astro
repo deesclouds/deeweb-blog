@@ -2,7 +2,8 @@
 import "../styles/global.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-const pageTitle = "My Astro Learning Blog";
+import BaseLayout from "../layouts/BaseLayout.astro";
+const {pageTitle} = Astro.props;
 const siteTitle = "DeeWeb";
 ---
 
@@ -17,7 +18,8 @@ const siteTitle = "DeeWeb";
   <body>
     <Header />
 
-    <h1>{pageTitle}</h1>
+    <BaseLayout pageTitle={pageTitle}>
+    </BaseLayout>
 
     <p>This is where I will be sharing my learning journey with using Astro.</p>
 

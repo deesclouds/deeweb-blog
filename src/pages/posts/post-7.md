@@ -29,3 +29,11 @@ Multiple layouts are useful for projects that utilizes Markdown pages for projec
 
 The BaseLayout.astro component allows for templating for all our pages.
 
+Learned how to implement Astro API to work with my files and add functionality to the tags, index, and RSS feed.
+
+Learned how to use the Astro.glob() for accessing data files within my project, how to use the getStaticPaths() to create multiple pages/routes all at once, and the Astro RSS package to create an RSS Feed.
+
+It's fun learning how to do this by implementing blog archives. 
+
+
+

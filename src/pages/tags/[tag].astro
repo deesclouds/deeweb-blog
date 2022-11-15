@@ -1,44 +1,20 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import BlogPost from "../../components/BlogPost.astro";
-export async function getStaticPaths({}) {
-  const allPosts = await Astro.glob("../posts/*.md");
-  return [
-    { params: { tag: "astro" }, props: { posts: allPosts } },
-    { params: { tag: "successes" }, props: { posts: allPosts } },
-    { params: { tag: "community" }, props: { posts: allPosts } },
-    { params: { tag: "blogging" }, props: { posts: allPosts } },
-    { params: { tag: "setbacks" }, props: { posts: allPosts } },
-    { params: { tag: "components" }, props: { posts: allPosts } },
-    { params: { tag: "refractor" }, props: { posts: allPosts } },
-    { params: { tag: "responsive" }, props: { posts: allPosts } },
-    { params: { tag: "design" }, props: { posts: allPosts } },
-    { params: { tag: "mobile" }, props: { posts: allPosts } },
-    { params: { tag: "first" }, props: { posts: allPosts } },
-    { params: { tag: "javascript" }, props: { posts: allPosts } },
-    { params: { tag: "layouts" }, props: { posts: allPosts } },
-    { params: { tag: "slot" }, props: { posts: allPosts } },
-    { params: { tag: "nesting" }, props: { posts: allPosts } },
-    { params: { tag: "API" }, props: { posts: allPosts } },
-    { params: { tag: "system" }, props: { posts: allPosts } },
-    { params: { tag: "learning in public", props: { posts: allPosts } } },
-  ];
+
+export async function getStaticPaths({ }) {
+    return[
+        {params: {tag: "astro"}},
+        {params: {tag: "successes"}},
+        {params: {tag: "community"}},
+        {params: {tag: "blogging"}},
+        {params: {tag: "setbacks"}},
+        {params: {tag: "learning in public"}},
+
+    ]
 }
 
-const { tag } = Astro.params;
-const { posts } = Astro.props;
-const filteredPosts = posts.filter((post) =>
-  post.frontmatter.tags.includes(tag)
-);
+const {tag} = Astro.params;
 ---
-
 <BaseLayout pageTitle={tag}>
-  <p>Posts tagged with {tag}</p>
-  <ul>
-    {
-      filteredPosts.map((post) => (
-        <BlogPost url={post.url} title={post.frontmatter.title} />
-      ))
-    }
-  </ul>
+    <p>Posts tagged with {tag}</p>
 </BaseLayout>

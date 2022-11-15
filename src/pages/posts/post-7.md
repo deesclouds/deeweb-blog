@@ -35,5 +35,31 @@ Learned how to use the Astro.glob() for accessing data files within my project, 
 
 It's fun learning how to do this by implementing blog archives. 
 
+How to dynamically add blog posts by creating a blog post component:
+
+First we need to generate our list of blog posts.
+```
+  {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
+
+```
+We will be using the map JavaScript function to pass each blog post through a the map function to produce, a new jQuery object containing the return blog posts.
+
+Next we will create a new component titled `BlogPost.astro` within our components directory `/src/components/BlogPost.astro`.
+
+Next we write our code to receive our title and url as Astro.props.
+```
+const {title, url} = Astro.props;
+```
+
+Next we add templating to create our each element within our list.
+```
+<li><a href={url}>{title}</a><li>
+```
+
+Next we import our our new component within our Blog page. 
+```
+import BlogPost from '../components/BlogPost.astro';
+
+```
 
 

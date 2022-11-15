@@ -10,8 +10,6 @@ image:
 tags: ["astro", "blogging", "learning in public", "successes"]
 ---
 
-<a href="/blog">Back to Blog Page</a>
-
 ## What I've accomplished:
 
 After a successful first week learning Astro, I decided to try some more. I wrote and imported a small component from memory!

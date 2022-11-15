@@ -18,9 +18,6 @@ tags:
     "nesting",
   ]
 ---
-
-<a href="/blog">Back to Blog Page</a>
-
 ## What I've learned:
 
 Learned how to refactor elements into a page layout.

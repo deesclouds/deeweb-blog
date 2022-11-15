@@ -10,8 +10,6 @@ pubDate: 2022-11-13
 tags: ["astro", "learning in public", "setbacks", "community"]
 ---
 
-<a href="/blog">Back to Blog Page</a>
-
 ## What I've accomplished:
 
 It wasn't always smooth sailing, but I'm enjoying building with Astro. And, the [Discord community](https://astro.build/chat) is really friendly and helpful!

@@ -4,29 +4,30 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 export async function getStaticPaths({ }) {
     const allPosts = await Astro.glob('../posts/*.md');
   return[
-    {params: {tag: "astro"}},
-    {params: {tag: "successes"}},
-    {params: {tag: "community"}},
-    {params: {tag: "blogging"}},
-    {params: {tag: "setbacks"}},
-    {params: {tag: "components"}},
-    {params: {tag: "refractor"}},
-    {params: {tag: "responsive"}},
-    {params: {tag: "design"}},
-    {params: {tag: "mobile"}},
-    {params: {tag: "first"}},
-    {params: {tag: "javascript"}},
-    {params: {tag: "layouts"}},
-    {params: {tag: "slot"}},
-    {params: {tag: "nesting"}},
-    {params: {tag: "API"}},
-    {params: {tag: "system"}},
-    {params: {tag: "learning in public"}}
+    {params: {tag: "astro"},  props: {posts: allPosts}},
+    {params: {tag: "successes"},  props: {posts: allPosts}},
+    {params: {tag: "community"},  props: {posts: allPosts}},
+    {params: {tag: "blogging"},  props: {posts: allPosts}},
+    {params: {tag: "setbacks"},  props: {posts: allPosts}},
+    {params: {tag: "components"},  props: {posts: allPosts}},
+    {params: {tag: "refractor"},  props: {posts: allPosts}},
+    {params: {tag: "responsive"},  props: {posts: allPosts}},
+    {params: {tag: "design"},  props: {posts: allPosts}},
+    {params: {tag: "mobile"},  props: {posts: allPosts}},
+    {params: {tag: "first"},  props: {posts: allPosts}},
+    {params: {tag: "javascript"},  props: {posts: allPosts}},
+    {params: {tag: "layouts"},  props: {posts: allPosts}},
+    {params: {tag: "slot"},  props: {posts: allPosts}},
+    {params: {tag: "nesting"},  props: {posts: allPosts}},
+    {params: {tag: "API"},  props: {posts: allPosts}},
+    {params: {tag: "system"},  props: {posts: allPosts}},
+    {params: {tag: "learning in public",  props: {posts: allPosts}}}
   ]
 }
 
 const { tag } = Astro.params;
 const { posts } = Astro.params;
+const filteredPosts = posts.filter((post) => post.frontmatter.tags.includes(tag));
 ---
 <BaseLayout pageTitle={tag}>
   <p>Posts tagged with {tag}</p>

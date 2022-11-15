@@ -3,12 +3,13 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: My Fifth Blog Post
 author: deesclouds
 description: "Now it's time to learn how to add javascript to my blog site"
-image: 
-    url: "#"
-    alt: "#"
+image:
+  url: "#"
+  alt: "#"
 pubDate: 2022-11-14
 tags: ["astro", "learning in public", "components", "community", "javascript"]
 ---
+
 <a href="/blog">Back to Blog Page</a>
 
 ## What I've learned:

@@ -53,53 +53,52 @@ const textCase = "uppercase";
     </style>
   </head>
   <body>
-    <Header />
+    <BaseLayout pageTitle={pageTitle}>
+      <p>I am learning how to build a blog site by using Astro.</p>
+      <p>
+        I first heard about Astro while listening to my favorie podcast
+        CodeNewbie.
+      </p>
+      <p>
+        CodeNewbie is my favorite podcast because it is easy to digest and what
+        I enjoy most is learning from the vast experiences from other developers
+        within the industry.
+      </p>
 
-    <h1>{pageTitle}</h1>
+      <p>Here are a few facts about me:</p>
+      <ul>
+        <li>My name is {identity.firstName}.</li>
+        <li>
+          I live in {identity.cityAndState} and I work as a {
+            identity.occupation
+          }.
+        </li>
+        {
+          identity.hobbies.length >= 2 && (
+            <li>
+              Two of my hobbies are: {identity.hobbies[0]} and{" "}
+              {identity.hobbies[1]}
+            </li>
+          )
+        }
+      </ul>
+      <p>My skills are:</p>
+      <ul>
+        {skills.map((skill) => <li class="skill">{skill}</li>)}
+      </ul>
 
-    <p>I am learning how to build a blog site by using Astro.</p>
-    <p>
-      I first heard about Astro while listening to my favorie podcast
-      CodeNewbie.
-    </p>
-    <p>
-      CodeNewbie is my favorite podcast because it is easy to digest and what I
-      enjoy most is learning from the vast experiences from other developers
-      within the industry.
-    </p>
+      {happy && <p>I am happy to be learning Astro!</p>}
 
-    <p>Here are a few facts about me:</p>
-    <ul>
-      <li>My name is {identity.firstName}.</li>
-      <li>
-        I live in {identity.cityAndState} and I work as a {identity.occupation}.
-      </li>
+      {finished && <p>I finished this tutorial!</p>}
+
       {
-        identity.hobbies.length >= 2 && (
-          <li>
-            Two of my hobbies are: {identity.hobbies[0]} and{" "}
-            {identity.hobbies[1]}
-          </li>
+        goal === 3 ? (
+          <p>My goal is to finish in 3 days.</p>
+        ) : (
+          <p>My goal is not 3 days.</p>
         )
       }
-    </ul>
-    <p>My skills are:</p>
-    <ul>
-      {skills.map((skill) => <li class="skill">{skill}</li>)}
-    </ul>
-
-    {happy && <p>I am happy to be learning Astro!</p>}
-
-    {finished && <p>I finished this tutorial!</p>}
-
-    {
-      goal === 3 ? (
-        <p>My goal is to finish in 3 days.</p>
-      ) : (
-        <p>My goal is not 3 days.</p>
-      )
-    }
-    <Footer />
+    </BaseLayout>
     <script>
       import "../scripts/menu.js";
     </script>

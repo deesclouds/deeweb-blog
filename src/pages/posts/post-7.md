@@ -90,3 +90,16 @@ To build a component to display the date for each of our blog post to show when 
 ```
 myPosts.map((post) => <LastUpdated date={post.frontmatter.pubDate}/>)
 ```
+
+I learned how to get past a type error when working with arrays. I needed to ask if the array was empty to do nothing. Then I learned how to analyze the pattern for code written inside getStaticPath() function or outside of it. 
+
+Astro.glob() calls to receive information about my .md files to pass to each page route. This happens inside getStaticPaths.
+
+The list of routes to be generated or returned by getStaticPaths() are inside getStaticPaths.
+
+The received values of props and params to be used within the HTML template are outside of getStaticPaths function.
+
+This means if we need information to construct the page routes, it is written within the getStaticPath() function.
+
+To receive information within the HTML template of a page route, we write it outside of the getStaticPaths() function.
+

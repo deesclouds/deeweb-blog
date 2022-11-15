@@ -2,6 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "My First Blog Post"
 description: "This is the first post of my new Astro blog."
+pubDate: 2022-11-13
 author: "deesclouds"
 image:
   url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
@@ -10,8 +11,6 @@ tags: ["astro", "blogging", "learning in public"]
 ---
 
 <a href="/blog">Back to Blog Page</a>
-
-Published on: 2022-11-13
 
 Welcome to my _deeweb_ about learning Astro! Here, I will share my learning journey as I build a new website.
 

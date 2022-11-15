@@ -11,8 +11,6 @@ tags: ["astro", "learning in public", "components", "community", "refractor", "r
 ---
 <a href="/blog">Back to Blog Page</a>
 
-Published on: 2022-11-14
-
 ## What I've learned:
 
 I learned how to refractor my code to improve my existing code design by utilizing less code without changing the design appearance and achieved this by utilizing a reusable component.

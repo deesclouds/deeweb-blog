@@ -11,8 +11,6 @@ tags: ["astro", "learning in public", "components", "community", "layouts", "slo
 ---
 <a href="/blog">Back to Blog Page</a>
 
-Published on: 2022-11-14
-
 ## What I've learned:
 
 Learned how to refactor elements into a page layout.

@@ -11,8 +11,6 @@ tags: ["astro", "learning in public", "components", "community", "javascript"]
 ---
 <a href="/blog">Back to Blog Page</a>
 
-Published on: 2022-11-14
-
 ## What I've learned:
 
 Implementing JavaScript interactions within the blog site.

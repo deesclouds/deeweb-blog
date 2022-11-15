@@ -20,3 +20,5 @@ Create a script tag and write my JS code there to perform actions based on clien
 The neat thing about Astro is that it runs JavaScript within the component's frontmatter at build time and can send JavaScript to the browser for client-side interactivity.
 
 Client-side JavaScript will be sent to the user's browser when it is written within or imported with script tags.
+
+I learned how to add and import .js files and scripts and also add client-side interactivity within script tags.

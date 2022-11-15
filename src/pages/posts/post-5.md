@@ -13,3 +13,6 @@ tags: ["astro", "learning in public", "components", "community", "javascript"]
 Published on: 2022-11-14
 
 ## What I've learned:
+
+Implementing JavaScript interactions within the blog site.
+Create a script tag and write my JS code there to perform actions based on client input.

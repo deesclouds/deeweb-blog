@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const allPosts = await Astro.glob('../posts/*.md');
+const pageTitle = "Tag Index";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <ul>
+    {tags.map((tag) => <li>{tag}</li>)}
+  </ul>
+</BaseLayout>

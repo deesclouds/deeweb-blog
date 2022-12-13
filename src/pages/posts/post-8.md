@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: My Eigth Blog Post
+title: My Eighth Blog Post
 author: deesclouds
 description: "Advanced JavaScript: Generate pages from existing tags"
 image:

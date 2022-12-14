@@ -1,4 +1,4 @@
-Project is live but still a work in progress [https://radiant-resonance.netlify.app/blog/]
+Project is live but still a work in progress [https://deeweb.netlify.app/]
 
 This is the README file that came with Astro. 
 I will update it once I get further within the process of building my blog site. 

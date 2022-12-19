@@ -25,5 +25,8 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
        {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title}/>)}
       </ul>
     </BaseLayout>
+    <script>
+      import "../scripts/menu.js";
+    </script>
   </body>
 </html>

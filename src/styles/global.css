@@ -70,7 +70,13 @@ h1 {
 a:focus {
   background-color: #ff9776;
 }
-
+/* buttons */
+button{
+  background-color: #4c1d95;
+  border-radius: 15px;
+  color: white;
+  padding: 1em;
+}
 /* expanded class is to toggle links from display to hidden on mobile displays */
 .expanded {
   display: unset;

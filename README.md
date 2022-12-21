@@ -4,6 +4,10 @@ This is the README file that came with Astro.
 I will update it once I get further within the process of building my blog site. 
 You can take a look at what I have so far at the link above. 
 
+# Updates so far:
+- Added a hydrated component with interactivity using a Preact component for the greeting banner where a user clicks the Get New Greeting button that renders a new greeting upon each click. It tells Astro to send and rerun JavaScript to the client when the page loads.
+
+
 # Welcome to [Astro](https://astro.build)
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)

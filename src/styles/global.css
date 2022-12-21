@@ -123,3 +123,13 @@ button{
 .dark .nav-links a {
   color: #fff;
 }
+
+.dark .nav-links a:hover,
+a:focus {
+  background-color: #ff595e;
+  border-radius: 45px;
+}
+
+.dark .skill{
+  color: #ff595e;
+}
